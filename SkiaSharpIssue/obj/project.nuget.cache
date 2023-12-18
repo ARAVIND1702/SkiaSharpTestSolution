@@ -1,0 +1,31 @@
+{
+  "version": 2,
+  "dgSpecHash": "tWWnPC3VAVkceZuROhyQFCkVBtQcCdQZLrwHu+X4r8Aq9tw66JtLZKU9r8eydVK5d9n3TcxuLkSJLMmCnKk+Bw==",
+  "success": true,
+  "projectFilePath": "/Users/shwetha/Downloads/SkiaSharpIssue-master/SkiaSharpIssue/SkiaSharpIssue.csproj",
+  "expectedPackageFiles": [
+    "/Users/shwetha/.nuget/packages/excss/4.2.3/excss.4.2.3.nupkg.sha512",
+    "/Users/shwetha/.nuget/packages/harfbuzzsharp/7.3.0/harfbuzzsharp.7.3.0.nupkg.sha512",
+    "/Users/shwetha/.nuget/packages/harfbuzzsharp.nativeassets.macos/7.3.0/harfbuzzsharp.nativeassets.macos.7.3.0.nupkg.sha512",
+    "/Users/shwetha/.nuget/packages/harfbuzzsharp.nativeassets.win32/7.3.0/harfbuzzsharp.nativeassets.win32.7.3.0.nupkg.sha512",
+    "/Users/shwetha/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "/Users/shwetha/.nuget/packages/netstandard.library/2.0.3/netstandard.library.2.0.3.nupkg.sha512",
+    "/Users/shwetha/.nuget/packages/shimskiasharp/1.0.0.8/shimskiasharp.1.0.0.8.nupkg.sha512",
+    "/Users/shwetha/.nuget/packages/skiasharp/2.88.6/skiasharp.2.88.6.nupkg.sha512",
+    "/Users/shwetha/.nuget/packages/skiasharp.harfbuzz/2.88.6/skiasharp.harfbuzz.2.88.6.nupkg.sha512",
+    "/Users/shwetha/.nuget/packages/skiasharp.nativeassets.macos/2.88.6/skiasharp.nativeassets.macos.2.88.6.nupkg.sha512",
+    "/Users/shwetha/.nuget/packages/skiasharp.nativeassets.win32/2.88.6/skiasharp.nativeassets.win32.2.88.6.nupkg.sha512",
+    "/Users/shwetha/.nuget/packages/skiasharp.svg/1.60.0/skiasharp.svg.1.60.0.nupkg.sha512",
+    "/Users/shwetha/.nuget/packages/skiasharp.views.forms/2.88.6/skiasharp.views.forms.2.88.6.nupkg.sha512",
+    "/Users/shwetha/.nuget/packages/svg.custom/1.0.0.8/svg.custom.1.0.0.8.nupkg.sha512",
+    "/Users/shwetha/.nuget/packages/svg.model/1.0.0.8/svg.model.1.0.0.8.nupkg.sha512",
+    "/Users/shwetha/.nuget/packages/svg.skia/1.0.0.8/svg.skia.1.0.0.8.nupkg.sha512",
+    "/Users/shwetha/.nuget/packages/system.buffers/4.5.1/system.buffers.4.5.1.nupkg.sha512",
+    "/Users/shwetha/.nuget/packages/system.memory/4.5.5/system.memory.4.5.5.nupkg.sha512",
+    "/Users/shwetha/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
+    "/Users/shwetha/.nuget/packages/system.runtime.compilerservices.unsafe/4.5.3/system.runtime.compilerservices.unsafe.4.5.3.nupkg.sha512",
+    "/Users/shwetha/.nuget/packages/xamarin.essentials/1.7.5/xamarin.essentials.1.7.5.nupkg.sha512",
+    "/Users/shwetha/.nuget/packages/xamarin.forms/5.0.0.2622/xamarin.forms.5.0.0.2622.nupkg.sha512"
+  ],
+  "logs": []
+}
