@@ -9,7 +9,7 @@ using Xamarin.Forms;
 
 namespace SkiaSharpIssue.Models
 {
-    internal class MonitoringGraphicsSVG
+    public class MonitoringGraphicsSVG
     {
         private XmlNode _frames;
         private float _width;
@@ -62,7 +62,8 @@ namespace SkiaSharpIssue.Models
         //    try
         //    {
         //        XmlNode frame = GetFrame(svgFrameIndex);
-        //        if (frame == null) {
+        //        if (frame == null)
+        //        {
         //            Console.WriteLine("frame is empty aravind");
 
         //        }
@@ -70,7 +71,7 @@ namespace SkiaSharpIssue.Models
         //        try
         //        {
         //            frameString = Regex.Replace(frameString, "(<a:svg.*?>)|(</a:svg>)", "");
-        //        } 
+        //        }
         //        catch (Exception ex)
         //        {
         //            throw new Exception("Failed to get stream for svg element:" + ex.Message);
@@ -91,6 +92,7 @@ namespace SkiaSharpIssue.Models
         //    }
         //}
 
+        
         public Stream GetStream(int svgFrameIndex)
         {
             try
@@ -158,7 +160,7 @@ namespace SkiaSharpIssue.Models
                 }
             }
         }
-
+        
         public float GetHeight()
         {
             return _height;

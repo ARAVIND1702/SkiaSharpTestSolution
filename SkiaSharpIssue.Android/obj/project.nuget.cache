@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5QnEkDkWy5qNBrjN8Eid5325E+aW92HhpbWIXzuv2nLxoR8ufjBlr0xWU8xkpMOP7KACkucgmT+93I23o2GSIw==",
+  "dgSpecHash": "zTS8Iz2IUghGjhvkCN3YjYhX8VSsNrTsTZ9MAwvfs32ZniVzxyPetvOXh5sMdI9XC2gQ2Oj1pnDHlEYqLoI/4Q==",
   "success": true,
-  "projectFilePath": "/Users/shwetha/Downloads/SkiaSharpIssue-master/SkiaSharpIssue.Android/SkiaSharpIssue.Android.csproj",
+  "projectFilePath": "/Users/shwetha/Desktop/SkiaSharpTestSolution/SkiaSharpTestSolution/SkiaSharpIssue.Android/SkiaSharpIssue.Android.csproj",
   "expectedPackageFiles": [
     "/Users/shwetha/.nuget/packages/excss/4.2.3/excss.4.2.3.nupkg.sha512",
     "/Users/shwetha/.nuget/packages/harfbuzzsharp/7.3.0/harfbuzzsharp.7.3.0.nupkg.sha512",

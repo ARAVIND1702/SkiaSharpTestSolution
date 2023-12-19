@@ -26,7 +26,7 @@
   <ItemGroup>
     <EmbeddedResource Include="Resources\working.svg" />
     <EmbeddedResource Include="Resources\not_working.svg" />
-    <EmbeddedResource Include="Resources\star.svg" />
+    <EmbeddedResource Include="Resources\fan.svg" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Update="Resources.resx">
@@ -37,6 +37,6 @@
   <ItemGroup>
     <None Remove="Resources\working.svg" />
     <None Remove="Resources\not_working.svg" />
-    <None Remove="Resources\star.svg" />
+    <None Remove="Resources\fan.svg" />
   </ItemGroup>
 </Project>

@@ -25,11 +25,11 @@ androidgeneratejnimarshalmethods=false
 os=unix
 androidincludedebugsymbols=true
 androidpackagenamingpolicy=lowercasecrc64
-_nugetassetstimestamp=638383326065386002
+_nugetassetstimestamp=638385303610455603
 typemapkind=strings-asm
 androidsupportedabis=arm64-v8a
 armeabi-v7a
 x86
 x86_64
 androidmanifestplaceholders=
-projectfullpath=/users/shwetha/downloads/skiasharpissue-master/skiasharpissue.android/skiasharpissue.android.csproj
+projectfullpath=/users/shwetha/desktop/skiasharptestsolution/skiasharptestsolution/skiasharpissue.android/skiasharpissue.android.csproj

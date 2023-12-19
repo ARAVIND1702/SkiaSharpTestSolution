@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tWWnPC3VAVkceZuROhyQFCkVBtQcCdQZLrwHu+X4r8Aq9tw66JtLZKU9r8eydVK5d9n3TcxuLkSJLMmCnKk+Bw==",
+  "dgSpecHash": "QsVYt1iK3GocyTvrTEqbFTAO6U9bIXSgu/iwSfWUlheVK1+6GONomadxCKDPqCgJ9VgoYh+wB+kzcEeFxoyU8Q==",
   "success": true,
-  "projectFilePath": "/Users/shwetha/Downloads/SkiaSharpIssue-master/SkiaSharpIssue/SkiaSharpIssue.csproj",
+  "projectFilePath": "/Users/shwetha/Desktop/SkiaSharpTestSolution/SkiaSharpTestSolution/SkiaSharpIssue/SkiaSharpIssue.csproj",
   "expectedPackageFiles": [
     "/Users/shwetha/.nuget/packages/excss/4.2.3/excss.4.2.3.nupkg.sha512",
     "/Users/shwetha/.nuget/packages/harfbuzzsharp/7.3.0/harfbuzzsharp.7.3.0.nupkg.sha512",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/shwetha/Downloads/SkiaSharpIssue-master/SkiaSharpIssue.Android/SkiaSharpIssue.Android.csproj": {}
+    "/Users/shwetha/Desktop/SkiaSharpTestSolution/SkiaSharpTestSolution/SkiaSharpIssue.Android/SkiaSharpIssue.Android.csproj": {}
   },
   "projects": {
-    "/Users/shwetha/Downloads/SkiaSharpIssue-master/SkiaSharpIssue.Android/SkiaSharpIssue.Android.csproj": {
+    "/Users/shwetha/Desktop/SkiaSharpTestSolution/SkiaSharpTestSolution/SkiaSharpIssue.Android/SkiaSharpIssue.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/shwetha/Downloads/SkiaSharpIssue-master/SkiaSharpIssue.Android/SkiaSharpIssue.Android.csproj",
+        "projectUniqueName": "/Users/shwetha/Desktop/SkiaSharpTestSolution/SkiaSharpTestSolution/SkiaSharpIssue.Android/SkiaSharpIssue.Android.csproj",
         "projectName": "SkiaSharpIssue.Android",
-        "projectPath": "/Users/shwetha/Downloads/SkiaSharpIssue-master/SkiaSharpIssue.Android/SkiaSharpIssue.Android.csproj",
+        "projectPath": "/Users/shwetha/Desktop/SkiaSharpTestSolution/SkiaSharpTestSolution/SkiaSharpIssue.Android/SkiaSharpIssue.Android.csproj",
         "packagesPath": "/Users/shwetha/.nuget/packages/",
-        "outputPath": "/Users/shwetha/Downloads/SkiaSharpIssue-master/SkiaSharpIssue.Android/obj/",
+        "outputPath": "/Users/shwetha/Desktop/SkiaSharpTestSolution/SkiaSharpTestSolution/SkiaSharpIssue.Android/obj/",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "configFilePaths": [
@@ -26,8 +26,8 @@
         "frameworks": {
           "monoandroid13.0": {
             "projectReferences": {
-              "/Users/shwetha/Downloads/SkiaSharpIssue-master/SkiaSharpIssue/SkiaSharpIssue.csproj": {
-                "projectPath": "/Users/shwetha/Downloads/SkiaSharpIssue-master/SkiaSharpIssue/SkiaSharpIssue.csproj"
+              "/Users/shwetha/Desktop/SkiaSharpTestSolution/SkiaSharpTestSolution/SkiaSharpIssue/SkiaSharpIssue.csproj": {
+                "projectPath": "/Users/shwetha/Desktop/SkiaSharpTestSolution/SkiaSharpTestSolution/SkiaSharpIssue/SkiaSharpIssue.csproj"
               }
             }
           }
@@ -48,14 +48,14 @@
         }
       }
     },
-    "/Users/shwetha/Downloads/SkiaSharpIssue-master/SkiaSharpIssue/SkiaSharpIssue.csproj": {
+    "/Users/shwetha/Desktop/SkiaSharpTestSolution/SkiaSharpTestSolution/SkiaSharpIssue/SkiaSharpIssue.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/shwetha/Downloads/SkiaSharpIssue-master/SkiaSharpIssue/SkiaSharpIssue.csproj",
+        "projectUniqueName": "/Users/shwetha/Desktop/SkiaSharpTestSolution/SkiaSharpTestSolution/SkiaSharpIssue/SkiaSharpIssue.csproj",
         "projectName": "SkiaSharpIssue",
-        "projectPath": "/Users/shwetha/Downloads/SkiaSharpIssue-master/SkiaSharpIssue/SkiaSharpIssue.csproj",
+        "projectPath": "/Users/shwetha/Desktop/SkiaSharpTestSolution/SkiaSharpTestSolution/SkiaSharpIssue/SkiaSharpIssue.csproj",
         "packagesPath": "/Users/shwetha/.nuget/packages/",
-        "outputPath": "/Users/shwetha/Downloads/SkiaSharpIssue-master/SkiaSharpIssue/obj/",
+        "outputPath": "/Users/shwetha/Desktop/SkiaSharpTestSolution/SkiaSharpTestSolution/SkiaSharpIssue/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/shwetha/.config/NuGet/NuGet.Config"
@@ -123,7 +123,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "/Users/shwetha/Library/Caches/VisualStudio/17.0/MSBuild/6695_3/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/Users/shwetha/Library/Caches/VisualStudio/17.0/MSBuild/4710_3/RuntimeIdentifierGraph.json"
         }
       }
     }
