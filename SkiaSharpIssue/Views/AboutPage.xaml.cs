@@ -28,6 +28,7 @@ namespace SkiaSharpIssue.Views
                 };
             }
         }
+        
 
         private void OnCanvasViewPaintInstructions(object sender, SKPaintSurfaceEventArgs args)
         {
@@ -41,6 +42,12 @@ namespace SkiaSharpIssue.Views
             {
                 instructionsGraphic.InvalidateSurface();
             });
+        }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            
+            Console.WriteLine("muruga");
         }
     }
 }

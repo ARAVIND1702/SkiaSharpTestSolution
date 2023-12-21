@@ -2041,7 +2041,7 @@
           "SkiaSharp.Svg": "1.60.0",
           "SkiaSharp.Views.Forms": "2.88.6",
           "Svg.Skia": "1.0.0.8",
-          "Xamarin.Essentials": "1.7.5",
+          "Xamarin.Essentials": "1.8.1",
           "Xamarin.Forms": "5.0.0.2622"
         },
         "compile": {
@@ -4180,11 +4180,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/shwetha/Downloads/SkiaSharpIssue-master/SkiaSharpIssue.Android/SkiaSharpIssue.Android.csproj",
+      "projectUniqueName": "/Users/shwetha/Desktop/SkiaSharpTestSolution/SkiaSharpIssue.Android/SkiaSharpIssue.Android.csproj",
       "projectName": "SkiaSharpIssue.Android",
-      "projectPath": "/Users/shwetha/Downloads/SkiaSharpIssue-master/SkiaSharpIssue.Android/SkiaSharpIssue.Android.csproj",
+      "projectPath": "/Users/shwetha/Desktop/SkiaSharpTestSolution/SkiaSharpIssue.Android/SkiaSharpIssue.Android.csproj",
       "packagesPath": "/Users/shwetha/.nuget/packages/",
-      "outputPath": "/Users/shwetha/Downloads/SkiaSharpIssue-master/SkiaSharpIssue.Android/obj/",
+      "outputPath": "/Users/shwetha/Desktop/SkiaSharpTestSolution/SkiaSharpIssue.Android/obj/",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -4199,8 +4199,8 @@
       "frameworks": {
         "monoandroid13.0": {
           "projectReferences": {
-            "/Users/shwetha/Downloads/SkiaSharpIssue-master/SkiaSharpIssue/SkiaSharpIssue.csproj": {
-              "projectPath": "/Users/shwetha/Downloads/SkiaSharpIssue-master/SkiaSharpIssue/SkiaSharpIssue.csproj"
+            "/Users/shwetha/Desktop/SkiaSharpTestSolution/SkiaSharpIssue/SkiaSharpIssue.csproj": {
+              "projectPath": "/Users/shwetha/Desktop/SkiaSharpTestSolution/SkiaSharpIssue/SkiaSharpIssue.csproj"
             }
           }
         }
@@ -4222,6 +4222,16 @@
     }
   },
   "logs": [
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Xamarin.Essentials from 1.8.1 to 1.7.5. Reference the package directly from the project to select a different version. \n SkiaSharpIssue.Android -> SkiaSharpIssue -> Xamarin.Essentials (>= 1.8.1) \n SkiaSharpIssue.Android -> Xamarin.Essentials (>= 1.7.5)",
+      "libraryId": "Xamarin.Essentials",
+      "targetGraphs": [
+        "MonoAndroid,Version=v13.0"
+      ]
+    },
     {
       "code": "NU1605",
       "level": "Warning",

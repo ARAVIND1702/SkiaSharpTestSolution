@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tWWnPC3VAVkceZuROhyQFCkVBtQcCdQZLrwHu+X4r8Aq9tw66JtLZKU9r8eydVK5d9n3TcxuLkSJLMmCnKk+Bw==",
+  "dgSpecHash": "AQyJnnLIfUmo/KncdIxYLGHdL4NQ13GlHTSFTOm+cFILq39tUvkDJoqXPd5thr9Jygfma3GPmn8kIXFMcJcq2Q==",
   "success": true,
-  "projectFilePath": "/Users/shwetha/Downloads/SkiaSharpIssue-master/SkiaSharpIssue/SkiaSharpIssue.csproj",
+  "projectFilePath": "/Users/shwetha/Desktop/SkiaSharpTestSolution/SkiaSharpIssue/SkiaSharpIssue.csproj",
   "expectedPackageFiles": [
     "/Users/shwetha/.nuget/packages/excss/4.2.3/excss.4.2.3.nupkg.sha512",
     "/Users/shwetha/.nuget/packages/harfbuzzsharp/7.3.0/harfbuzzsharp.7.3.0.nupkg.sha512",
@@ -24,7 +24,7 @@
     "/Users/shwetha/.nuget/packages/system.memory/4.5.5/system.memory.4.5.5.nupkg.sha512",
     "/Users/shwetha/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
     "/Users/shwetha/.nuget/packages/system.runtime.compilerservices.unsafe/4.5.3/system.runtime.compilerservices.unsafe.4.5.3.nupkg.sha512",
-    "/Users/shwetha/.nuget/packages/xamarin.essentials/1.7.5/xamarin.essentials.1.7.5.nupkg.sha512",
+    "/Users/shwetha/.nuget/packages/xamarin.essentials/1.8.1/xamarin.essentials.1.8.1.nupkg.sha512",
     "/Users/shwetha/.nuget/packages/xamarin.forms/5.0.0.2622/xamarin.forms.5.0.0.2622.nupkg.sha512"
   ],
   "logs": []

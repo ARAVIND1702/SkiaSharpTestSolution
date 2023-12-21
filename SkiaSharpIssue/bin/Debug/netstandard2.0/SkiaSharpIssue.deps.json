@@ -14,7 +14,7 @@
           "SkiaSharp.Svg": "1.60.0",
           "SkiaSharp.Views.Forms": "2.88.6",
           "Svg.Skia": "1.0.0.8",
-          "Xamarin.Essentials": "1.7.5",
+          "Xamarin.Essentials": "1.8.1",
           "Xamarin.Forms": "5.0.0.2622"
         },
         "runtime": {
@@ -177,7 +177,7 @@
           }
         }
       },
-      "Xamarin.Essentials/1.7.5": {
+      "Xamarin.Essentials/1.8.1": {
         "dependencies": {
           "System.Numerics.Vectors": "4.5.0"
         },
@@ -352,12 +352,12 @@
       "path": "system.runtime.compilerservices.unsafe/4.5.3",
       "hashPath": "system.runtime.compilerservices.unsafe.4.5.3.nupkg.sha512"
     },
-    "Xamarin.Essentials/1.7.5": {
+    "Xamarin.Essentials/1.8.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-+dDLUCXOehBxFOw5D5AXeFtcLQ0HBCMeVHSSbonVuZWJ2/8mb7+pGFQA8n053Lvpie7CAd8C+05chIKK6YCBiw==",
-      "path": "xamarin.essentials/1.7.5",
-      "hashPath": "xamarin.essentials.1.7.5.nupkg.sha512"
+      "sha512": "sha512-IzfRGrCrRuytgdQU+Im17Cepib6qUyLj1xfMjn+sDPTfmhmcZotsQCm5Dblm4Vxo9/SGFTdm1OgJUKWzu+dfjw==",
+      "path": "xamarin.essentials/1.8.1",
+      "hashPath": "xamarin.essentials.1.8.1.nupkg.sha512"
     },
     "Xamarin.Forms/5.0.0.2622": {
       "type": "package",

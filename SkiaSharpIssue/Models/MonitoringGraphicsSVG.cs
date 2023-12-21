@@ -5,17 +5,20 @@ using System.IO;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Xml;
+using SkiaSharp;
 using Xamarin.Forms;
 
 namespace SkiaSharpIssue.Models
 {
-    internal class MonitoringGraphicsSVG
+    public class MonitoringGraphicsSVG
     {
         private XmlNode _frames;
         private float _width;
         private float _height;
         private float _x;
         private float _y;
+
+        public SKCanvas Canvas { get; internal set; }
 
         public MonitoringGraphicsSVG(XmlNode frames, float width, float height, float x, float y)
         {
@@ -62,7 +65,8 @@ namespace SkiaSharpIssue.Models
         //    try
         //    {
         //        XmlNode frame = GetFrame(svgFrameIndex);
-        //        if (frame == null) {
+        //        if (frame == null)
+        //        {
         //            Console.WriteLine("frame is empty aravind");
 
         //        }
@@ -70,7 +74,7 @@ namespace SkiaSharpIssue.Models
         //        try
         //        {
         //            frameString = Regex.Replace(frameString, "(<a:svg.*?>)|(</a:svg>)", "");
-        //        } 
+        //        }
         //        catch (Exception ex)
         //        {
         //            throw new Exception("Failed to get stream for svg element:" + ex.Message);
@@ -91,6 +95,7 @@ namespace SkiaSharpIssue.Models
         //    }
         //}
 
+        
         public Stream GetStream(int svgFrameIndex)
         {
             try
@@ -157,6 +162,70 @@ namespace SkiaSharpIssue.Models
                     RemoveNamespaces(childNode);
                 }
             }
+        }
+        public void ApplyTransparentColor(int index, SkiaSharp.SKColor _sktransparentcolor)
+        {
+            Color xamarinTransparentColor = SkiaSharp.Views.Forms.Extensions.ToFormsColor(_sktransparentcolor);
+            string xamarinTransparentColorHex = xamarinTransparentColor.ToHex(); //8 digits color --> ARGB
+            string xamarinTransparentColorHexSixChar = "#" + xamarinTransparentColorHex.Substring(3); //remove Alpha channel
+
+            try
+            {
+                //edit xml node
+                XmlNode frame = GetFrame(index);
+                XmlNodeList _node = frame.SelectNodes("//*[@fill='" + xamarinTransparentColorHexSixChar + "']");
+                string frameString = frame.InnerXml;
+                string frameStringWithTransparentColour;
+                StringBuilder frameStringBuilder = new StringBuilder(frameString);
+                try
+                {
+
+                    bool foundTrColor = Regex.IsMatch(frameStringBuilder.ToString(), xamarinTransparentColorHexSixChar, RegexOptions.IgnoreCase);
+                    if (foundTrColor)
+                    {
+                        frameStringWithTransparentColour = Regex.Replace(frameStringBuilder.ToString(), $"fill-opacity=\"1.00\" fill=\"{xamarinTransparentColorHexSixChar}\"", $"fill-opacity=\"0.00\" fill=\"{xamarinTransparentColorHexSixChar}\"", RegexOptions.IgnoreCase);
+                        frameStringWithTransparentColour = Regex.Replace(frameStringWithTransparentColour, $"stroke-opacity=\"1.00\" stroke=\"{xamarinTransparentColorHexSixChar}\"", $"stroke-opacity=\"0.00\" stroke=\"{xamarinTransparentColorHexSixChar}\"", RegexOptions.IgnoreCase);
+
+                        frameStringBuilder.Clear();
+                        frameStringBuilder = new StringBuilder(frameStringWithTransparentColour);
+                        try
+                        {
+                            bool t = _frames.ChildNodes[index].HasChildNodes;
+
+                            if (_frames.ChildNodes.Count > 0)
+                            {
+                                _frames.ChildNodes[index].InnerXml = XmlStringToXmlNode(frameStringBuilder.ToString()).InnerXml;
+                            }
+
+                        }
+                        catch (Exception ex)
+                        {
+                            throw new SVGParserException("Failed to get stream for svg element:" + ex.Message);
+
+                        }
+
+                    }
+                }
+                catch (Exception ex)
+                {
+                    throw new SVGParserException("Failed to get stream for svg element:" + ex.Message);
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new SVGParserException("Failed to get stream for svg element:" + ex.Message);
+            }
+        }
+
+        public static XmlNode XmlStringToXmlNode(string xmlInputString)
+        {
+            if (String.IsNullOrEmpty(xmlInputString.Trim())) { throw new ArgumentNullException("xmlInputString"); }
+            var xd = new XmlDocument();
+            using (var sr = new StringReader(xmlInputString))
+            {
+                xd.Load(sr);
+            }
+            return xd;
         }
 
         public float GetHeight()

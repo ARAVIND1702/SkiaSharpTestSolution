@@ -10,7 +10,7 @@
     <PackageReference Include="SkiaSharp" Version="2.88.6" />
     <PackageReference Include="SkiaSharp.Svg" Version="1.60.0" />
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2622" />  
-    <PackageReference Include="Xamarin.Essentials" Version="1.7.5" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.8.1" />
     <PackageReference Include="Svg.Skia" Version="1.0.0.8" />
     <PackageReference Include="SkiaSharp.Views.Forms" Version="2.88.6" />
   </ItemGroup>
@@ -26,7 +26,8 @@
   <ItemGroup>
     <EmbeddedResource Include="Resources\working.svg" />
     <EmbeddedResource Include="Resources\not_working.svg" />
-    <EmbeddedResource Include="Resources\star.svg" />
+    <EmbeddedResource Include="Resources\arrow_right_3_2.svg" />
+    <EmbeddedResource Include="Resources\bsp_pump_3_2.svg" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Update="Resources.resx">
@@ -37,6 +38,7 @@
   <ItemGroup>
     <None Remove="Resources\working.svg" />
     <None Remove="Resources\not_working.svg" />
-    <None Remove="Resources\star.svg" />
+    <None Remove="Resources\arrow_right_3_2.svg" />
+    <None Remove="Resources\bsp_pump_3_2.svg" />
   </ItemGroup>
 </Project>

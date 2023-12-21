@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5QnEkDkWy5qNBrjN8Eid5325E+aW92HhpbWIXzuv2nLxoR8ufjBlr0xWU8xkpMOP7KACkucgmT+93I23o2GSIw==",
+  "dgSpecHash": "FFUnmFIpW3JaTbcSXbv/oZRK0q/jLTR7k6vO9K2WqbZlSQayyR4WjLlt3NxdF2AOmV2xG1rlps4lac7+xW0T2g==",
   "success": true,
-  "projectFilePath": "/Users/shwetha/Downloads/SkiaSharpIssue-master/SkiaSharpIssue.Android/SkiaSharpIssue.Android.csproj",
+  "projectFilePath": "/Users/shwetha/Desktop/SkiaSharpTestSolution/SkiaSharpIssue.Android/SkiaSharpIssue.Android.csproj",
   "expectedPackageFiles": [
     "/Users/shwetha/.nuget/packages/excss/4.2.3/excss.4.2.3.nupkg.sha512",
     "/Users/shwetha/.nuget/packages/harfbuzzsharp/7.3.0/harfbuzzsharp.7.3.0.nupkg.sha512",
@@ -80,6 +80,16 @@
     "/Users/shwetha/.nuget/packages/xamarin.google.guava.listenablefuture/1.0.0.2/xamarin.google.guava.listenablefuture.1.0.0.2.nupkg.sha512"
   ],
   "logs": [
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Xamarin.Essentials from 1.8.1 to 1.7.5. Reference the package directly from the project to select a different version. \n SkiaSharpIssue.Android -> SkiaSharpIssue -> Xamarin.Essentials (>= 1.8.1) \n SkiaSharpIssue.Android -> Xamarin.Essentials (>= 1.7.5)",
+      "libraryId": "Xamarin.Essentials",
+      "targetGraphs": [
+        "MonoAndroid,Version=v13.0"
+      ]
+    },
     {
       "code": "NU1605",
       "level": "Warning",

@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SkiaSharpIssue.Views.AboutPage"
+
              xmlns:vm="clr-namespace:SkiaSharpIssue.ViewModels"
              xmlns:skia="clr-namespace:SkiaSharp.Views.Forms;assembly=SkiaSharp.Views.Forms"
              Title="{Binding Title}">
@@ -15,7 +16,6 @@
             <Color x:Key="Accent">#96d1ff</Color>
         </ResourceDictionary>
     </ContentPage.Resources>
-
     <Grid>
         <skia:SKCanvasView
                     x:Name="instructionsGraphic"
@@ -26,6 +26,11 @@
                     PaintSurface="OnCanvasViewPaintInstructions"
                     VerticalOptions="CenterAndExpand">
         </skia:SKCanvasView>
+     <Button
+            Text="Next frame"
+            Clicked="Button_Clicked"
+            HorizontalOptions="Center"
+            VerticalOptions="EndAndExpand"/>
     </Grid>
 
 </ContentPage>
