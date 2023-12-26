@@ -34,7 +34,7 @@ namespace SkiaSharpIssue.ViewModels
             Screen();
 
         }
-        private AnimationController animationController;
+        //private AnimationController animationController;
         public ICommand OpenWebCommand { get; }
         public Action RefreshViewAction { get; set; }
         // custom topprogramcomponent
@@ -71,7 +71,7 @@ namespace SkiaSharpIssue.ViewModels
                     FrameIndex = 0,
                     FrameLimit = 5,
                     NOfFrames = 5,
-                    NOfStates = 2,
+                    NOfStates = 1,
                     SVGFileName = item.GetFileName(),
                     AnimationType = item.GetAnimationType(),
                     XPosition = (float)item.GetXPosition(),
@@ -114,7 +114,7 @@ namespace SkiaSharpIssue.ViewModels
                 {
                     float componentXPosition = topogramSvg.XPosition;
                     float componentYPosition = topogramSvg.YPosition;
-
+                    
                     float valueXPosition = 0;
                     float valueYPosition = 0;
                     svgName = topogramSvg.SVGFileName;
@@ -125,7 +125,7 @@ namespace SkiaSharpIssue.ViewModels
                     }
                     else
                     {
-                        var buffer = Resources.bsp_pump_3_2;
+                        var buffer = Resources.bsp_pump_3_2; // add resource here
                         var xml = Encoding.UTF8.GetString(buffer);
                         XmlDocument xmlDoc = new XmlDocument();
                         xmlDoc.LoadXml(xml);
@@ -145,7 +145,7 @@ namespace SkiaSharpIssue.ViewModels
                         svgYPosition = info.Height - (componentYPosition - monitoringGraphicsSVG.GetFrameYValue(svgFrameIndex) - monitoringGraphicsSVG.GetYValue() + 45) * ratio;
 
                         var stream = monitoringGraphicsSVG.GetStream(svgFrameIndex: svgFrameIndex);
-                        var svg = new Svg.Skia.SKSvg();
+                        var svg = new Svg.Skia.SKSvg(); //initilaise the new lib here
                         svg.Load(stream);
                         var matrix = SKMatrix.CreateScaleTranslation(ratio, ratio, svgXPosition, svgYPosition);
                         canvas.DrawPicture(svg.Picture, ref matrix);
@@ -237,10 +237,7 @@ namespace SkiaSharpIssue.ViewModels
                             if (topogramSvg.NOfFrames > 1)
                             {
                                 ChangeAnimationFrame(animatedSvg: topogramSvg);
-                                foreach (var t in topogramSvgs.Where(x => x.Name == topogramSvg.Name))
-                                {
-                                    //t.FrameIndex = topogramSvg.FrameIndex;
-                                }
+                                
                             }
                         }
                         catch (Exception ex)
@@ -294,7 +291,6 @@ namespace SkiaSharpIssue.ViewModels
             {
 
                 animatedSvg.FrameIndex++;
-                    Console.WriteLine("1");
                 await Task.Delay(TimeSpan.FromSeconds(1.0 / 30));
 
             }
@@ -374,39 +370,6 @@ namespace SkiaSharpIssue.ViewModels
             };
         }
     }
-    public class AnimationController
-    {
-        private readonly List<TopogramSvg> animatedSvgs;
-        private readonly Timer animationTimer;
-        private readonly int animationInterval = 100; // Set the interval based on your requirements
-
-        public AnimationController(List<TopogramSvg> animatedSvgs)
-        {
-            this.animatedSvgs = animatedSvgs;
-            animationTimer = new Timer(animationInterval);
-            animationTimer.Elapsed += AnimationTimerElapsed;
-            animationTimer.Start();
-        }
-
-        private void AnimationTimerElapsed(object sender, ElapsedEventArgs e)
-        {
-            foreach (var animatedSvg in animatedSvgs)
-            {
-                ChangeAnimationFrame(animatedSvg);
-            }
-        }
-
-        private void ChangeAnimationFrame(TopogramSvg animatedSvg)
-        {
-            if (animatedSvg.FrameIndex + 1 <= animatedSvg.FrameLimit)
-            {
-                animatedSvg.FrameIndex++;
-            }
-            else if (animatedSvg.AnimationType == "cyclic")
-            {
-                animatedSvg.FrameIndex = animatedSvg.CurrentState * animatedSvg.NOfFrames - animatedSvg.NOfFrames;
-            }
-        }
-    }
+    
 }
 

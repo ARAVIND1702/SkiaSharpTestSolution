@@ -1,23 +1,39 @@
 ﻿<Properties StartupConfiguration="{8A2BBF03-FD61-4D8D-B5F7-84136FFEB757}|Default">
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.pixel_5_-_api_33" />
   <MonoDevelop.MonoDroid LastDeploySdkVersion="13.2.2.0" />
-  <MonoDevelop.Ide.ItemProperties.SkiaSharpIssue.Android PreferredExecutionTarget="Android.pixel_5_-_api_33" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="SkiaSharpIssue/ViewModels/AboutViewModel.cs">
+    <Files>
+      <File FileName="SkiaSharpIssue/ViewModels/AboutViewModel.cs" Line="240" Column="33" />
+      <File FileName="SkiaSharpIssue/Resources.Designer.cs" />
+      <File FileName="SkiaSharpIssue/Resources.resx" />
+      <File FileName="SkiaSharpIssue/Services/Topprogram/TopogramComponent.cs" />
+      <File FileName="SkiaSharpIssue/Views/AboutPage.xaml.cs" />
+      <File FileName="SkiaSharpIssue/Views/AboutPage.xaml" />
+      <File FileName="SkiaSharpIssue/Models/SVGParser.cs" Line="1" Column="1" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="SkiaSharpIssue" expanded="True" selected="True" />
+          <Node name="SkiaSharpIssue" expanded="True" selected="True">
+            <Node name="SkiaSharpIssue">
+              <Node name="Models" expanded="True" />
+              <Node name="Resources" expanded="True" />
+              <Node name="Services" expanded="True" />
+              <Node name="ViewModels" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="AboutPage.xaml" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
         </State>
-      </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.SkiaSharpIssue.Android PreferredExecutionTarget="Android.pixel_5_-_api_33" />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.pixel_5_-_api_33" />
 </Properties>

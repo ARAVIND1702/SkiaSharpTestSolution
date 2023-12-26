@@ -60,10 +60,19 @@ namespace SkiaSharpIssue {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        public static byte[] bsp_pump_3_2
-        {
+        public static byte[] bsp_pump_3_2 {
             get {
                 object obj = ResourceManager.GetObject("bsp_pump_3_2", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        public static byte[] de2015_heating_block_1_1 {
+            get {
+                object obj = ResourceManager.GetObject("de2015_heating_block_1_1", resourceCulture);
                 return ((byte[])(obj));
             }
         }

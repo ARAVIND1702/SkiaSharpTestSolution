@@ -127,4 +127,7 @@
   <data name="bsp_pump_3_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\bsp_pump_3_2.svg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="de2015_heating_block_1_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\de2015_heating_block_1_1.svg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>
